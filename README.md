@@ -165,6 +165,19 @@ Again, this can be accomplished using node attributes:
 }
 ```
 
+### Fork
+In order to allow installation from an linux repository
+Following attributes must be defined:
+
+```
+default['nxlog']['installation_type'] = 'yum'
+```
+
+```
+default['nxlog']['repo_package_name'] = 'package_name'
+```
+
+
 ## Resources
 
 The following describes each LWRP provided by this cookbook.

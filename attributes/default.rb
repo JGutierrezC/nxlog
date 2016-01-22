@@ -24,6 +24,7 @@ default['nxlog']['user'] = 'nxlog'
 default['nxlog']['group'] = 'nxlog'
 
 default['nxlog']['package_source'] = 'https://mirror.widgit.com/nxlog'
+default['nxlog']['installation_type'] = 'remote_file'
 
 case node['platform_family']
 when 'debian'
