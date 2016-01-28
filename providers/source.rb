@@ -122,7 +122,7 @@ action :create do
 
     else
       fail 'Tried to write nxlog config for unrecognised input module: ' +
-        n.input_module
+      n.input_module
 
     end
 

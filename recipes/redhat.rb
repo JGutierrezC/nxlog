@@ -21,10 +21,10 @@ package 'apr'
 package 'libdbi'
 package 'perl'
 
-if node['platform_version'].to_f < 7
-  rv = 6
-else
-  rv = 7
+rv = if node['platform_version'].to_f < 7
+       6
+     else
+       7
 end
 
 package_name = "nxlog-ce-#{node['nxlog']['version']}-1_rhel#{rv}.x86_64.rpm"

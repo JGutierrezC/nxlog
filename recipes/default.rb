@@ -20,11 +20,10 @@
 if node['nxlog']['installation_type'] == 'remote_file'
   # Using remote_file for installation (nxlog official link)
   include_recipe 'nxlog::remote_file_installation'
-else 
-  # Previously adding the repository file 
+else
+  # Previously adding the repository file
   package node['nxlog']['repo_package_name']
 end
-
 
 service 'nxlog' do
   action [:enable, :start]
